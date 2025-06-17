@@ -10,6 +10,8 @@ CREATE TABLE `user` (
   `password` VARCHAR(255) NOT NULL,
   `email` VARCHAR(100),
   `phone` VARCHAR(20),
+  `role` VARCHAR(20) DEFAULT 'user',
+  `deleted` TINYINT(1) DEFAULT 0,
   `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
@@ -71,6 +73,7 @@ CREATE TABLE `product` (
   `price` DECIMAL(10,2) NOT NULL,
   `stock` INT NOT NULL DEFAULT 0,
   `image_url` VARCHAR(255),
+  `approved` TINYINT(1) DEFAULT 0,
   `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (`supplier_id`) REFERENCES `supplier`(`id`),
   FOREIGN KEY (`category_id`) REFERENCES `category`(`id`),
