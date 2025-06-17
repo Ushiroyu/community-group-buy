@@ -16,6 +16,7 @@ import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useProductsStore } from '@/store/products';
 import { useCartStore } from '@/store/cart';
+import { ElMessage } from 'element-plus';
 
 const route = useRoute();
 const prodStore = useProductsStore();

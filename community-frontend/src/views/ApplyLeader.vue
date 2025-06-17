@@ -15,6 +15,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import api from '@/services/api';
+import { ElMessage } from 'element-plus';
 
 const communities = ref([]);
 const form = ref({ communityId: null });
