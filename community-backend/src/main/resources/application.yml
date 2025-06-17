@@ -17,7 +17,7 @@ spring:
       port: 6379
 
 jwt:
-  secret: VerySecretKey12345
+  secret: ChangeThisSecretToBeLongEnough123456
   expireSeconds: 86400
 
 mybatis-plus:
