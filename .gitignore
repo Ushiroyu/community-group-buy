@@ -1,0 +1,5 @@
+# Node artifacts
+community-frontend/node_modules/
+community-frontend/dist/
+# Maven target
+community-backend/target/
