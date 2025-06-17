@@ -17,7 +17,6 @@
 import { ref, reactive } from 'vue';
 import { useRouter } from 'vue-router';
 import api from '@/services/api';
-import { ElMessage } from 'element-plus';
 
 const router = useRouter();
 const form = reactive({ username: '', password: '', email: '' });

@@ -17,7 +17,6 @@
 import { ref, onMounted } from 'vue';
 import api from '@/services/api';
 import { useAuthStore } from '@/store/auth';
-import { ElMessage } from 'element-plus';
 
 const auth = useAuthStore();
 const community = ref({});

@@ -18,7 +18,6 @@
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import api from '@/services/api';
-import { ElMessage } from 'element-plus';
 
 const route = useRoute();
 const router = useRouter();

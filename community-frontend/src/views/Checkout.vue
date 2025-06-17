@@ -22,7 +22,6 @@ import api from '@/services/api';
 import { useCartStore } from '@/store/cart';
 import { useAuthStore } from '@/store/auth';
 import { useRouter } from 'vue-router';
-import { ElMessage } from 'element-plus';
 
 const cart = useCartStore();
 const auth = useAuthStore();
